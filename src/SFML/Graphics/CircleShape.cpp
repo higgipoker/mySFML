@@ -71,4 +71,12 @@ Vector2f CircleShape::getCenter() const {
           this->getPosition().y + this->getRadius()};
 }
 
+////////////////////////////////////////////////////////////
+void CircleShape::setCenter(sf::Vector2f center) {
+  this->setPosition(center.x - getRadius(), center.y - getRadius());
+}
+
+////////////////////////////////////////////////////////////
+void CircleShape::setCenter(float x, float y) { this->setCenter({x, y}); }
+
 }  // namespace sf
