@@ -187,7 +187,7 @@ public:
     /// \return Global bounding rectangle of the entity
     ///
     ////////////////////////////////////////////////////////////
-    FloatRect getGlobalBounds() const;
+    virtual FloatRect getGlobalBounds() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Draw the sprite to a render target

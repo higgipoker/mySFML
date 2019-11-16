@@ -125,7 +125,7 @@ public:
     /// \see loadFromMemory, loadFromStream, loadFromImage
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& filename, const IntRect& area = IntRect());
+    virtual bool loadFromFile(const std::string& filename, const IntRect& area = IntRect());
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the texture from a file in memory
